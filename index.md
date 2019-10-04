@@ -1,21 +1,21 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "FIXME"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
+carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+venue: "University of Illinois"
+address: "428 Armory, 505 E Armory Ave, Champaign, Illinois"
+latlng: "40.1047489,-88.2341386"
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+humandate: "Dec 12–13, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am–4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2018-12-12      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2018-12-13        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Neal Davis","Elizabeth Wickes"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: [""]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["training@cse.illinois.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: https://pad.carpentries.org/2019-12-12-ttt-illinois            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+eventbrite: 75333447369          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -29,19 +29,6 @@ double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
-
-
-{% comment %}
-For a workshop please delete the following block
-{% endcomment %}
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to customize your
-own website. If you are running a self-organized workshop or have not put in a
-workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know
-about your workshop and our administrator may contact you if we need any extra
-information.
-</div>
 
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
@@ -274,13 +261,731 @@ please preview your site before committing, and make sure to run
 {% endcomment %}
 <h2 id="syllabus">Syllabus</h2>
 
-{% if page.carpentry == "swc" %}
-{% include sc/syllabus.html %}
-{% elsif page.carpentry == "dc" %}
-{% include dc/syllabus.html %}
-{% elsif page.carpentry == "lc" %}
-{% include lc/syllabus.html %}
-{% endif %}
+<div class="syllabus">
+  <h2 id="schedule">Sample Schedule</h2>
+
+  
+  
+  
+    
+  
+
+  <table class="table table-striped">
+  <tr>
+    <td class="col-md-1"></td>
+    <td class="col-md-1"></td>
+    <td class="col-md-3"><a href="./setup.html">Setup</a></td>
+    <td class="col-md-7">Download files required for the lesson</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"></td>
+    <td class="col-md-1"></td>
+    <td class="col-md-3"><a href="https://www.surveymonkey.com/r/instructor_training_pre_survey?workshop_id=instructor-training">Pre-training survey</a></td>
+    <td class="col-md-7">Please fill out our pre-training survey before the start of the course.</td>
+  </tr>
+  
+     
+      
+      
+       
+    
+    
+    
+    <tr>
+      <td class="col-md-1">Day 1</td>
+      <td class="col-md-1">09:00</td>
+      <td class="col-md-3">
+        
+	1. <a href="./01-welcome/index.html">Welcome</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              Who are we and how do we approach teaching?
+
+              
+              <br/>
+              
+            
+              What should you expect from this workshop?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">09:25</td>
+      <td class="col-md-3">
+        
+	2. <a href="./02-practice-learning/index.html">Building Skill With Practice</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How do people learn?
+
+              
+              <br/>
+              
+            
+              Who is a typical Carpentries learner?
+
+              
+              <br/>
+              
+            
+              How can we help novices become competent practitioners?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">10:25</td>
+      <td class="col-md-3">
+        
+	3. <a href="./03-expertise/index.html">Expertise and Instruction</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              What type of instructor is best for novices?
+
+              
+              <br/>
+              
+            
+              How are we (as instructors) different from our learners and how does this impact our teaching?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">11:10</td>
+      <td class="col-md-3">
+        
+	4. <a href="./04-coffee/index.html">Morning Break</a>
+      </td>
+      <td class="col-md-7">
+        
+          Break
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">11:25</td>
+      <td class="col-md-3">
+        
+	5. <a href="./05-memory/index.html">Memory and Cognitive Load</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              What is cognitive load and how does it affect learning?
+
+              
+              <br/>
+              
+            
+              How can we design instruction to work with, rather than against, memory constraints?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">12:10</td>
+      <td class="col-md-3">
+        
+	6. <a href="./06-feedback/index.html">Building Skill With Feedback</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How can I get feedback from learners?
+
+              
+              <br/>
+              
+            
+              How can I use this feedback to improve my teaching?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">12:30</td>
+      <td class="col-md-3">
+        
+	7. <a href="./07-lunch/index.html">Lunch</a>
+      </td>
+      <td class="col-md-7">
+        
+          Break
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">13:30</td>
+      <td class="col-md-3">
+        
+	8. <a href="./08-motivation/index.html">Motivation and Demotivation</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              Why is motivation important?
+
+              
+              <br/>
+              
+            
+              How can we create a motivating environment for learners?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">14:45</td>
+      <td class="col-md-3">
+        
+	9. <a href="./09-mindset/index.html">Mindset</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How does mindset influence learning?
+
+              
+              <br/>
+              
+            
+              How should we praise our learners?
+
+              
+              <br/>
+              
+            
+              How should we talk about errors?
+
+              
+              <br/>
+              
+            
+              What are successful habits of lifelong learners?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">15:15</td>
+      <td class="col-md-3">
+        
+	10. <a href="./10-coffee/index.html">Afternoon Break</a>
+      </td>
+      <td class="col-md-7">
+        
+          Break
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">15:30</td>
+      <td class="col-md-3">
+        
+	11. <a href="./11-practice-teaching/index.html">Teaching is a Skill</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How can I improve my teaching?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">16:40</td>
+      <td class="col-md-3">
+        
+	12. <a href="./12-homework/index.html">Wrap-Up and Homework for Tomorrow</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              What have we learned today?
+
+              
+              <br/>
+              
+            
+              What needs to be done to prepare for tomorrow?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+     
+      
+       
+        
+        
+        <tr>
+          <td class="col-md-1"></td>
+          <td class="col-md-1">17:00</td>
+          <td class="col-md-3">Finish</td>
+          <td class="col-md-7"></td>
+        </tr>
+      
+       
+    
+    
+    
+    <tr>
+      <td class="col-md-1">Day 2</td>
+      <td class="col-md-1">09:00</td>
+      <td class="col-md-3">
+        
+	13. <a href="./13-second-welcome/index.html">Welcome Back</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              What have we learned so far?
+
+              
+              <br/>
+              
+            
+              What will we focus on today?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">09:10</td>
+      <td class="col-md-3">
+        
+	14. <a href="./14-live/index.html">Live Coding is a Skill</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              Why do we teach programming using participatory live coding?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">10:20</td>
+      <td class="col-md-3">
+        
+	15. <a href="./15-lesson-study/index.html">Preparing to Teach</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How should I prepare to teach?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">11:10</td>
+      <td class="col-md-3">
+        
+	16. <a href="./16-coffee/index.html">Morning Break</a>
+      </td>
+      <td class="col-md-7">
+        
+          Break
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">11:25</td>
+      <td class="col-md-3">
+        
+	17. <a href="./17-performance/index.html">More Practice Live Coding</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How did you change your teaching in response to feedback?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">12:10</td>
+      <td class="col-md-3">
+        
+	18. <a href="./18-management/index.html">Managing a Diverse Classroom</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How can I prepare for effective co-teaching?
+
+              
+              <br/>
+              
+            
+              What are the challenges of managing a heterogeneous classroom?
+
+              
+              <br/>
+              
+            
+              What do I do if there is a Code of Conduct violation?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">12:40</td>
+      <td class="col-md-3">
+        
+	19. <a href="./19-lunch/index.html">Lunch</a>
+      </td>
+      <td class="col-md-7">
+        
+          Break
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">13:40</td>
+      <td class="col-md-3">
+        
+	20. <a href="./20-checkout/index.html">Checkout Process</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              What do I need to do to finish certifying as a Carpentries instructor?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">13:55</td>
+      <td class="col-md-3">
+        
+	21. <a href="./21-carpentries/index.html">The Carpentries: How We Operate</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How is The Carpentries organized and run?
+
+              
+              <br/>
+              
+            
+              What is the difference between SWC, DC, and LC workshops?
+
+              
+              <br/>
+              
+            
+              How do you run a Carpentries workshop?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">15:10</td>
+      <td class="col-md-3">
+        
+	22. <a href="./22-coffee/index.html">Afternoon Break</a>
+      </td>
+      <td class="col-md-7">
+        
+          Break
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">15:25</td>
+      <td class="col-md-3">
+        
+	23. <a href="./23-introductions/index.html">Workshop Introductions</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How do you actually start a workshop?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">16:05</td>
+      <td class="col-md-3">
+        
+	24. <a href="./24-practices/index.html">Putting It Together</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              How are the teaching practices we’ve learned used in our workshops?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+    
+    
+    
+    <tr>
+      <td class="col-md-1"></td>
+      <td class="col-md-1">16:25</td>
+      <td class="col-md-3">
+        
+	25. <a href="./25-wrap-up/index.html">Wrapping Up</a>
+      </td>
+      <td class="col-md-7">
+        
+          
+            
+              What can we improve in this training?
+
+              
+            
+          
+        
+      </td>
+    </tr>
+    
+  
+  
+  
+  <tr>
+    <td class="col-md-1"></td>
+    <td class="col-md-1">16:40</td>
+    <td class="col-md-3"><a href="https://www.surveymonkey.com/r/instructor_training_post_survey?workshop_id=instructor-training">Post-training survey</a></td>
+    <td class="col-md-7">Please fill out our pre-training survey before the start of the course.</td>
+  </tr>
+  
+  
+  
+  <tr>
+    <td class="col-md-1"></td>
+    <td class="col-md-1">16:55</td>
+    <td class="col-md-3">Finish</td>
+    <td class="col-md-7"></td>
+  </tr>
+  </table>
+
+  <p>
+    The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
+  </p>
+
+</div>
+
 
 <hr/>
 
