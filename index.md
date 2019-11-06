@@ -954,7 +954,7 @@ e.g., '2015-06-10-esu'.
       <li><a href="{{ site.dc_site }}/OpenRefine-ecology-lesson/01-working-with-openrefine">Faceting and Clustering in OpenRefine</a></li>
       <li><a href="{{ site.dc_site }}/sql-ecology-lesson/01-sql-basic-queries">Basic Queries in SQL</a></li>
       <li><a href="{{ site.dc_site }}/R-ecology-lesson/02-starting-with-data.html">Starting with Data in R</a></li>
-      <li><a href="{{ site.dc_site }}/python-ecology-lesson/01-starting-with-data">Starting with Data in Python</a></li>
+      <li><a href="{{ site.dc_site }}/python-ecology-lesson/02-starting-with-data">Starting with Data in Python</a></li>
     </ul>
   </div>
   <div class="col-md-6">
