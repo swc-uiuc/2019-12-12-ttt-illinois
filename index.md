@@ -3,7 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
 venue: "University of Illinois"
-address: "131 School of Information Sciences, 501 East Daniel Street, Champaign, Illinois"
+address: "53 School of Information Sciences, 501 East Daniel Street, Champaign, Illinois"
 latlng: "40.1076536,-88.2336951"
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
